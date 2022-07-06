@@ -17,9 +17,9 @@ function nextSequence() {
   $("h1").text("Level " + level);
   randomNumber = Math.floor(Math.random() * 4);
   randomChosenColor = buttonColors[randomNumber];
-  console.log(randomNumber, randomChosenColor);
+  //console.log(randomNumber, randomChosenColor);
   gamePattern.push(randomChosenColor);
-  console.log(gamePattern);
+  //console.log(gamePattern);
   color = $("#" + randomChosenColor);
   $(color).fadeOut().fadeIn();
   playSound(randomChosenColor);
